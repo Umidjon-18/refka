@@ -6,11 +6,18 @@ import 'app_colors.dart';
 abstract class AppTextStyles {
   const AppTextStyles._();
 
-  static const String fontFamily = 'PlusJakartaSans';
+  static const String fontFamily = 'SFProDisplay';
   static const String fontFamilyClash = 'ClashDisplay';
   static const String fontFamilyHeliosExtC = 'HeliosExtC';
 
   static TextStyle head29w7 = TextStyle(
+      fontFamily: fontFamily,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.normal,
+      fontSize: 29.sp,
+      color: AppColors.textColor.shade1);
+    //ishlagan
+  static TextStyle head34w7 = TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w700,
       fontStyle: FontStyle.normal,
@@ -120,6 +127,8 @@ abstract class AppTextStyles {
       fontStyle: FontStyle.normal,
       fontSize: 16.sp,
       color: AppColors.textColor.shade1);
+
+      //ishlagan
 
   static TextStyle body16w6 = TextStyle(
       fontFamily: fontFamily,
