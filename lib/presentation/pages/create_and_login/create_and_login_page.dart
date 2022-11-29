@@ -44,36 +44,35 @@ class _CreateAndLoginPageState extends State<CreateAndLoginPage> {
             "Or sign up with ",
             style: AppTextStyles.body20wB.copyWith(color: Colors.black),
           ),
-          SizedBox(height: 24.h),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CustomButton(
                 width: 145.w,
                 height: 58.h,
+                margin: EdgeInsets.only(top: 24.h, bottom: 10.h, right: 9.w),
                 onPressed: () {},
                 child: Center(child: SvgPicture.asset(Assets.icons.facebook)),
               ),
-              SizedBox(width: 9.w),
               CustomButton(
                 width: 145.w,
                 height: 58.h,
+                margin: EdgeInsets.only(top: 24.h, bottom: 10.h),
                 onPressed: () {},
                 child: Center(child: SvgPicture.asset(Assets.icons.google)),
               ),
             ],
           ),
-          SizedBox(height: 10.w),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CustomButton(
                 width: 145.w,
                 height: 58.h,
+                margin: EdgeInsets.only(right: 9.w),
                 onPressed: () {},
                 child: Center(child: SvgPicture.asset(Assets.icons.pinterest)),
               ),
-              SizedBox(width: 9.w),
               CustomButton(
                 width: 145.w,
                 height: 58.h,
@@ -82,11 +81,11 @@ class _CreateAndLoginPageState extends State<CreateAndLoginPage> {
               ),
             ],
           ),
-          SizedBox(height: 10.w),
           CustomButton(
             width: 299.w,
             height: 58.h,
             onPressed: () {},
+            margin: EdgeInsets.only(top: 10.h),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
