@@ -30,7 +30,7 @@ class _CreateAndLoginPageState extends State<CreateAndLoginPage> {
             width: 299.w,
             height: 58.h,
             margin: EdgeInsets.only(top: 24.h, bottom: 72.h),
-            onPressed: () {},
+            onPressed: () =>Navigator.pushNamed(context, Routes.createAccount),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
