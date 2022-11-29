@@ -5,8 +5,8 @@ import '../pages/create_and_login/create_and_login_page.dart';
 import '../pages/login/login_page.dart';
 
 class Routes {
-  static const createAndLogin = '/createAndLogin';
-  static const createAccount = '/';
+  static const createAndLogin = '/';
+  static const createAccount = '/createAccount';
   static const login = '/login';
 
   static Route<dynamic> generateRoute(RouteSettings routeSettings) {
@@ -25,11 +25,6 @@ class Routes {
             settings: routeSettings,
             builder: (_) => const CreateAccauntPage(),
           );
-        // case createAccount:
-        //   return MaterialPageRoute(
-        //     settings: routeSettings,
-        //     builder: (_) => SignWelcomePage(),
-        //   );
         case login:
           return MaterialPageRoute(
             settings: routeSettings,
