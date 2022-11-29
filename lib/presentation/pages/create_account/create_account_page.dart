@@ -20,22 +20,24 @@ class CreateAccauntPage extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                      height: 44.h,
-                      width: 44.h,
-                      margin: EdgeInsets.only(top: 35.h),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: AppColors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            blurRadius: 30,
-                            offset: const Offset(0, 10),
-                            color: AppColors.black.withOpacity(.1),
-                          ),
-                        ],
-                      ),
-                      child: Center(
-                          child: SvgPicture.asset(Assets.icons.arrowLeft)))
+                    height: 44.h,
+                    width: 44.h,
+                    margin: EdgeInsets.only(top: 35.h),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: AppColors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 30,
+                          offset: const Offset(0, 10),
+                          color: AppColors.black.withOpacity(.1),
+                        ),
+                      ],
+                    ),
+                    child: Center(
+                      child: SvgPicture.asset(Assets.icons.arrow),
+                    ),
+                  )
                 ],
               ),
               Text(
