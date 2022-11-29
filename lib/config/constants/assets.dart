@@ -7,8 +7,6 @@ abstract class Assets {
   // ignore: library_private_types_in_public_api
   static _Images get images => const _Images();
 
-  // ignore: library_private_types_in_public_api
-  static _Gifs get gifs => const _Gifs();
 }
 
 abstract class _AssetsHolder {
@@ -20,30 +18,31 @@ abstract class _AssetsHolder {
 class _Icons extends _AssetsHolder {
   const _Icons() : super('assets/icons');
 
-  String get arrowLeft => "$basePath/ic_arrow.svg";
+  String get unions => "$basePath/ic_unions.svg";
 
+  String get arrow => "$basePath/ic_arrow.svg";
+
+  String get facebook => "$basePath/ic_facebook.svg";
   
+  String get google => "$basePath/ic_google.svg";
+
+  String get pinterest => "$basePath/ic_pinterest.svg";
+
+  String get vkontakte => "$basePath/ic_vkontakte.svg";
+
+  String get apple => "$basePath/ic_apple.svg";
+
+  String get telegram => "$basePath/ic_telegram.svg";
+
+
 }
 
 class _Images extends _AssetsHolder {
   const _Images() : super('assets/images');
 
- 
-  String get inviteFriend => "$basePath/invite_friend.png";
-
   
+
+  String get bgSubscripotion => "$basePath/bg_subsctip.png";
 }
 
-class _Gifs extends _AssetsHolder {
-  const _Gifs() : super('assets/gifs');
 
-  String get welcome_1_1 => "$basePath/welcome_1_1.gif";
-  // String get welcome_1_1_1 => "$basePath/welcome_1_1_1.gif";
-  String get welcome_1_2_1 => "$basePath/welcome_1_2_1.gif";
-  String get welcome_1_3_1 => "$basePath/welcome_1_3_1.gif";
-  String get welcome_1_4_1 => "$basePath/welcome_1_4_1.gif";
-}
-
-// class _Videos extends _AssetsHolder {
-//   const _Videos() : super('assets/videos');
-// }
