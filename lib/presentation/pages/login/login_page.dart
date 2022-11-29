@@ -9,6 +9,7 @@ import 'package:refka/presentation/components/custom_button.dart';
 
 import '../../components/email_component.dart';
 import '../../components/password_component.dart';
+import '../create_account/components/custom_text_field.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -38,8 +39,20 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
           ),
-          const EmailComponent(),
-          const PasswordComponent(),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 38.w),
+            child: const CustomTextField(
+              hintText: 'Your Eamil',
+              isIcon: false,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 38.w, right: 38.w, bottom: 26.h),
+            child: const CustomTextField(
+              hintText: 'Password',
+              isIcon: true,
+            ),
+          ),
           Text(
             "Forget password?",
             style: AppTextStyles.body16w6.copyWith(color: AppColors.blackColor),

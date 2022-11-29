@@ -22,14 +22,16 @@ class _CreateAccauntPageState extends State<CreateAccauntPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: AppColors.white,
-      appBar: CustomAppBar(backFunction: () => Navigator.pushNamed(context, Routes.createAndLogin),),
+      appBar: CustomAppBar(
+        backFunction: () => Navigator.pushNamed(context, Routes.createAndLogin),
+      ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 38.w),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            
             Padding(
               padding: EdgeInsets.only(top: 32.h, bottom: 48.h),
               child: Text(
@@ -58,7 +60,7 @@ class _CreateAccauntPageState extends State<CreateAccauntPage> {
             Padding(
               padding: EdgeInsets.only(top: 5.h, bottom: 24.h),
               child: TextButton(
-                onPressed: () =>Navigator.pushNamed(context, Routes.login),
+                onPressed: () => Navigator.pushNamed(context, Routes.login),
                 style: AppDecorations.buttonStyle(
                   bgColor: AppColors.black,
                   borderRadius: 10.r,
@@ -67,8 +69,7 @@ class _CreateAccauntPageState extends State<CreateAccauntPage> {
                 ),
                 child: Text(
                   'Create account',
-                  style:
-                      AppTextStyles.body16w6.copyWith(color: AppColors.white),
+                  style: AppTextStyles.body16w6.copyWith(color: AppColors.white),
                 ),
               ),
             ),
@@ -97,14 +98,11 @@ class _CreateAccauntPageState extends State<CreateAccauntPage> {
                     textAlign: TextAlign.left,
                     text: TextSpan(
                       text: 'I agree to the ',
-                      style: AppTextStyles.body15w4
-                          .copyWith(color: AppColors.textColor1),
+                      style: AppTextStyles.body15w4.copyWith(color: AppColors.textColor1),
                       children: [
                         TextSpan(
-                          text:
-                              'Refka’s Terms & Conditions and Private Policy',
-                          style: AppTextStyles.body15w4
-                              .copyWith(color: AppColors.black),
+                          text: 'Refka’s Terms & Conditions and Private Policy',
+                          style: AppTextStyles.body15w4.copyWith(color: AppColors.black),
                         )
                       ],
                     ),
@@ -117,12 +115,11 @@ class _CreateAccauntPageState extends State<CreateAccauntPage> {
               margin: EdgeInsets.only(top: 72.h, bottom: 24.h),
               child: Text(
                 'Already have an account?',
-                style:
-                    AppTextStyles.body20wB.copyWith(color: AppColors.black),
+                style: AppTextStyles.body20wB.copyWith(color: AppColors.black),
               ),
             ),
             TextButton(
-              onPressed: () =>Navigator.pushNamed(context, Routes.login),
+              onPressed: () => Navigator.pushNamed(context, Routes.login),
               style: AppDecorations.buttonStyle(
                 bgColor: AppColors.white,
                 borderRadius: 10.r,
@@ -132,8 +129,7 @@ class _CreateAccauntPageState extends State<CreateAccauntPage> {
               ),
               child: Text(
                 'Log in',
-                style:
-                    AppTextStyles.body16w6.copyWith(color: AppColors.black),
+                style: AppTextStyles.body16w6.copyWith(color: AppColors.black),
               ),
             ),
           ],
