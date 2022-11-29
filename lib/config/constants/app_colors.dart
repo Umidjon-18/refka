@@ -5,6 +5,7 @@ abstract class AppColors {
 
   static const Color secondartTextColor = Color(0xFFAEB2B5);
   static const Color blackColor = Color(0xFF000000);
+  static const Color textFieldColor = Color(0xFFEEEEEE);
 
   static List<Color> cartGrColors = [
     const Color(0xff383E4F),

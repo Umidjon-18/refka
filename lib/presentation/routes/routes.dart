@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../pages/create_and_login/create_and_login_page.dart';
+import '../pages/login/login_page.dart';
 
 class Routes {
   static const createAndLogin = '/';
@@ -23,11 +24,11 @@ class Routes {
         //     settings: routeSettings,
         //     builder: (_) => SignWelcomePage(),
         //   );
-        // case login:
-        //   return MaterialPageRoute(
-        //     settings: routeSettings,
-        //     builder: (_) => MainPage(),
-        //   );
+        case login:
+          return MaterialPageRoute(
+            settings: routeSettings,
+            builder: (_) => const LoginPage(),
+          );
         default:
           return MaterialPageRoute(
             settings: routeSettings,

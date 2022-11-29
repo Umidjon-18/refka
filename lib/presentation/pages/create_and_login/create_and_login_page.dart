@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:refka/config/constants/app_colors.dart';
 import 'package:refka/config/constants/app_text_styles.dart';
 import 'package:refka/config/constants/assets.dart';
+import 'package:refka/presentation/routes/routes.dart';
 
 import '../../../config/constants/app_decorations.dart';
 import '../../components/custom_appbar.dart';
@@ -20,6 +21,7 @@ class _CreateAndLoginPageState extends State<CreateAndLoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: AppColors.baseLight.shade100,
       appBar: CustomAppBar(backFunction: () {}),
       body: Column(
@@ -85,7 +87,14 @@ class _CreateAndLoginPageState extends State<CreateAndLoginPage> {
             width: 299.w,
             height: 58.h,
             onPressed: () {},
-            child: Center(child: SvgPicture.asset(Assets.icons.google)),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SvgPicture.asset(Assets.icons.apple),
+                SizedBox(width: 10.w),
+                Text("Sign in with Apple", style: AppTextStyles.body16w6),
+              ],
+            ),
           ),
           Padding(
             padding: EdgeInsets.only(top: 24.h, bottom: 72.h),
@@ -108,7 +117,7 @@ class _CreateAndLoginPageState extends State<CreateAndLoginPage> {
             style: AppTextStyles.body20wB.copyWith(color: Colors.black),
           ),
           GestureDetector(
-            onTap: () {},
+            onTap: () => Navigator.pushNamed(context, Routes.login),
             child: Container(
               width: 297.w,
               height: 58.h,
