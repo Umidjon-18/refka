@@ -1,34 +1,34 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-// import 'app_colors.dart';
 
-// abstract class AppDecorations {
-//   static BoxDecoration defDecor = BoxDecoration(
-//     borderRadius: BorderRadius.circular(10),
-//     // color: AppColors.textColor.shade2,
-//   );
+abstract class AppDecorations {
+  static BoxDecoration defDecor = BoxDecoration(
+    borderRadius: BorderRadius.circular(10.r),
+    color:  Colors.black,
+  );
 
-//   static ButtonStyle buttonStyle({
-//     double? borderRadius,
-//     Color? bgColor,
-//     EdgeInsets? padding,
-//     BorderSide? border,
-//     Size? size,
-//     Color? overlayColor
-//   }) {
-//     return ButtonStyle(
-//       shape: MaterialStateProperty.all(
-//         RoundedRectangleBorder(
-//           borderRadius: BorderRadius.circular(borderRadius ?? 10),
-//           side: border ?? BorderSide.none,
-//         ),
-//       ),
-//       fixedSize: MaterialStatePropertyAll(size),
-//       backgroundColor:
-//           MaterialStateProperty.all(bgColor ?? AppColors.accentColor),
-//       overlayColor: MaterialStateProperty.all(overlayColor??
-//           AppColors.accentColor),
-//       padding: MaterialStateProperty.all(padding),
-//     );
-//   }
-// }
+  static ButtonStyle buttonStyle({
+    double? borderRadius,
+    Color? bgColor,
+    EdgeInsets? padding,
+    BorderSide? border,
+    Size? size,
+    Color? overlayColor
+  }) {
+    return ButtonStyle(
+      shape: MaterialStateProperty.all(
+        RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(borderRadius ?? 10),
+          side: border ?? BorderSide.none,
+        ),
+      ),
+      fixedSize: MaterialStatePropertyAll(size),
+      backgroundColor:
+          MaterialStateProperty.all(bgColor ?? Colors.black),
+      overlayColor: MaterialStateProperty.all(overlayColor??
+          Colors.black),
+      padding: MaterialStateProperty.all(padding),
+    );
+  }
+}

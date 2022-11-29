@@ -6,7 +6,7 @@ import 'app_colors.dart';
 abstract class AppTextStyles {
   const AppTextStyles._();
 
-  static const String fontFamily = 'PlusJakartaSans';
+  static const String fontFamily = 'SFProDisplay';
   static const String fontFamilyClash = 'ClashDisplay';
   static const String fontFamilyHeliosExtC = 'HeliosExtC';
 

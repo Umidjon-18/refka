@@ -20,6 +20,8 @@ abstract class _AssetsHolder {
 class _Icons extends _AssetsHolder {
   const _Icons() : super('assets/icons');
 
+  String get unions => "$basePath/ic_unions.svg";
+
   String get vfx => "$basePath/ic_vfx.svg";
 
   String get usdt => "$basePath/ic_usdt.svg";
