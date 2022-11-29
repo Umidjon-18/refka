@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 abstract class AppColors {
   const AppColors._();
 
-  
+  static const Color secondartTextColor = Color(0xFFAEB2B5);
+  static const Color blackColor = Color(0xFF000000);
 
   static List<Color> cartGrColors = [
     const Color(0xff383E4F),

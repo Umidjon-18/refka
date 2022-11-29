@@ -35,13 +35,13 @@ flutter:
   fonts:
     - family: SFProDisplay
       fonts:
-        - asset: fonts/SFPRODISPLAYBOLD.OTF
+        - asset: fonts/SF-Pro-Display-Bold.ttf
           weight: 700
-        - asset: fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF
+        - asset: fonts/SF-Pro-Display-Semibold.ttf
           weight: 600
-        - asset: fonts/SFPRODISPLAYMEDIUM.OTF
+        - asset: fonts/SF-Pro-Display-Medium.ttf
           weight: 500
-        - asset: fonts/SFPRODISPLAYREGULAR.OTF
+        - asset: fonts/SF-Pro-Display-Regular.ttf
           weight: 400
   
   # For details regarding fonts from package dependencies,

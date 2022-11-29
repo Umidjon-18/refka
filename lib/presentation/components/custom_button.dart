@@ -9,12 +9,14 @@ class CustomButton extends StatelessWidget {
     required this.width,
     required this.height,
     required this.child,
+    this.margin = EdgeInsets.zero,
     required this.onPressed,
   }) : super(key: key);
 
   final double width;
   final double height;
-  final Row child;
+  final Widget child;
+  final EdgeInsets margin;
   void Function() onPressed;
 
   @override
@@ -22,6 +24,7 @@ class CustomButton extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
+        margin: margin,
         width: width,
         height: height,
         decoration: AppDecorations.defDecor,
