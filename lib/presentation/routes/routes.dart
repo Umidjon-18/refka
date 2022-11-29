@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:refka/presentation/pages/create_account/create_account_page.dart';
 
 import '../pages/create_and_login/create_and_login_page.dart';
+import '../pages/login/login_page.dart';
 
 class Routes {
   static const createAndLogin = '/createAndLogin';
@@ -29,11 +30,11 @@ class Routes {
         //     settings: routeSettings,
         //     builder: (_) => SignWelcomePage(),
         //   );
-        // case login:
-        //   return MaterialPageRoute(
-        //     settings: routeSettings,
-        //     builder: (_) => MainPage(),
-        //   );
+        case login:
+          return MaterialPageRoute(
+            settings: routeSettings,
+            builder: (_) => const LoginPage(),
+          );
         default:
           return MaterialPageRoute(
             settings: routeSettings,

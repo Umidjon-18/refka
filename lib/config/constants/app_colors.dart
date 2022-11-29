@@ -10,6 +10,7 @@ abstract class AppColors {
   static const Color black =  Color(0xff000000);
   static const Color textBgColor =  Color(0xffEEEEEE);
   static const Color textColor1 =  Color(0xffAEB2B5);
+  static const Color textFieldColor = Color(0xFFEEEEEE);
 
   static List<Color> cartGrColors = [
     const Color(0xff383E4F),

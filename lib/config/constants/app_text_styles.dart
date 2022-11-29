@@ -162,6 +162,14 @@ abstract class AppTextStyles {
       fontSize: 37.sp,
       color: AppColors.textColor.shade1);
 
+// worked
+  static TextStyle body34wB = TextStyle(
+      fontFamily: fontFamily,
+      fontWeight: FontWeight.bold,
+      fontStyle: FontStyle.normal,
+      fontSize: 34.sp,
+      color: AppColors.textColor.shade1);
+
   static TextStyle body16w5 = TextStyle(
       fontFamily: fontFamily,
       fontWeight: FontWeight.w500,

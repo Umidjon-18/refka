@@ -6,7 +6,6 @@ abstract class Assets {
 
   // ignore: library_private_types_in_public_api
   static _Images get images => const _Images();
-
 }
 
 abstract class _AssetsHolder {
@@ -23,7 +22,7 @@ class _Icons extends _AssetsHolder {
   String get arrow => "$basePath/ic_arrow.svg";
 
   String get facebook => "$basePath/ic_facebook.svg";
-  
+
   String get google => "$basePath/ic_google.svg";
 
   String get pinterest => "$basePath/ic_pinterest.svg";
@@ -36,15 +35,11 @@ class _Icons extends _AssetsHolder {
   
   String get unseen => "$basePath/ic_unseen.svg";
 
-
+  String get unseen => "$basePath/ic_unseen.svg";
 }
 
 class _Images extends _AssetsHolder {
   const _Images() : super('assets/images');
 
-  
-
   String get bgSubscripotion => "$basePath/bg_subsctip.png";
 }
-
-
