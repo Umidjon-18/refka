@@ -21,6 +21,7 @@ class _CreateAccauntPageState extends State<CreateAccauntPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.white,
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 38.w),
@@ -83,8 +84,7 @@ class _CreateAccauntPageState extends State<CreateAccauntPage> {
                   ),
                   child: Text(
                     'Create account',
-                    style:
-                        AppTextStyles.body16w6.copyWith(color: AppColors.white),
+                    style: AppTextStyles.body16w6.copyWith(color: AppColors.white),
                   ),
                 ),
               ),
@@ -113,14 +113,11 @@ class _CreateAccauntPageState extends State<CreateAccauntPage> {
                       textAlign: TextAlign.left,
                       text: TextSpan(
                         text: 'I agree to the ',
-                        style: AppTextStyles.body15w4
-                            .copyWith(color: AppColors.textColor1),
+                        style: AppTextStyles.body15w4.copyWith(color: AppColors.textColor1),
                         children: [
                           TextSpan(
-                            text:
-                                'Refka’s Terms & Conditions and Private Policy',
-                            style: AppTextStyles.body15w4
-                                .copyWith(color: AppColors.black),
+                            text: 'Refka’s Terms & Conditions and Private Policy',
+                            style: AppTextStyles.body15w4.copyWith(color: AppColors.black),
                           )
                         ],
                       ),
@@ -133,8 +130,7 @@ class _CreateAccauntPageState extends State<CreateAccauntPage> {
                 margin: EdgeInsets.only(top: 72.h, bottom: 24.h),
                 child: Text(
                   'Already have an account?',
-                  style:
-                      AppTextStyles.body20wB.copyWith(color: AppColors.black),
+                  style: AppTextStyles.body20wB.copyWith(color: AppColors.black),
                 ),
               ),
               TextButton(
@@ -148,8 +144,7 @@ class _CreateAccauntPageState extends State<CreateAccauntPage> {
                 ),
                 child: Text(
                   'Log in',
-                  style:
-                      AppTextStyles.body16w6.copyWith(color: AppColors.black),
+                  style: AppTextStyles.body16w6.copyWith(color: AppColors.black),
                 ),
               ),
             ],
