@@ -16,6 +16,13 @@ abstract class AppTextStyles {
       fontStyle: FontStyle.normal,
       fontSize: 29.sp,
       color: AppColors.textColor.shade1);
+    //ishlagan
+  static TextStyle head34w7 = TextStyle(
+      fontFamily: fontFamily,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.normal,
+      fontSize: 29.sp,
+      color: AppColors.textColor.shade1);
 
   static TextStyle head40w5 = TextStyle(
       fontFamily: fontFamily,
@@ -120,6 +127,8 @@ abstract class AppTextStyles {
       fontStyle: FontStyle.normal,
       fontSize: 16.sp,
       color: AppColors.textColor.shade1);
+
+      //ishlagan
 
   static TextStyle body16w6 = TextStyle(
       fontFamily: fontFamily,
