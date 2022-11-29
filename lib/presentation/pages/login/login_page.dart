@@ -7,8 +7,6 @@ import 'package:refka/config/constants/assets.dart';
 import 'package:refka/presentation/components/custom_appbar.dart';
 import 'package:refka/presentation/components/custom_button.dart';
 
-import '../../components/email_component.dart';
-import '../../components/password_component.dart';
 import '../create_account/components/custom_text_field.dart';
 
 class LoginPage extends StatefulWidget {
