@@ -35,7 +35,6 @@ class _Icons extends _AssetsHolder {
   
   String get unseen => "$basePath/ic_unseen.svg";
 
-  String get unseen => "$basePath/ic_unseen.svg";
 }
 
 class _Images extends _AssetsHolder {
